@@ -16,7 +16,13 @@ function App() {
     <>
       <Router>
         <NavBar />
-        <div className="pages">
+        <div
+          className="pages"
+          style={{
+            backgroundImage: "url('/images/Background.jpg')",
+            backgroundSize: "cover",
+          }}
+        >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
